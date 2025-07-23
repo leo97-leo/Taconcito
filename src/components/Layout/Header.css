@@ -1,0 +1,54 @@
+/* ----------- DESKTOP NAVIGATION ----------- */
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-family: "Times New Roman", serif;
+  transition: color 0.3s ease;
+}
+
+.navigation-menu li a:hover {
+  color: #d4af37; /* Dorado elegante */
+}
+
+/* ----------- MOBILE NAVIGATION ----------- */
+.mobile-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-navigation li {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.mobile-navigation li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.mobile-navigation li a:hover {
+  color: #d4af37; /* Dorado también en móvil */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
