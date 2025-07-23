@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Typography, Box, Container
 } from "@mui/material";
-import { MenuList } from '../data/Especialidadesdata';
+import { MenuList } from '../data/EspecialidadesData';
 import MenuCard from "../components/MenuCard/EspecialidadeCard"; 
 
 function Especialidades() {
